@@ -12,7 +12,7 @@ document.querySelectorAll('.player[data-youtube]').forEach(function (box) {
   btn.addEventListener('click', function () {
     var id = box.getAttribute('data-youtube');
     var frame = document.createElement('iframe');
-    frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&playsinline=1';
+    frame.src = 'https://www.youtube.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&playsinline=1';
     frame.title = 'Video dự thi Chợ Số Tây Bắc';
     frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
     frame.allowFullscreen = true;
